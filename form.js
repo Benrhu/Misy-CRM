@@ -14,7 +14,8 @@ form.addEventListener("submit", (event) => {
   const phone = form.phone.value;
   const webSencilla = form.webSencilla.value;
   const webConTienda = form.webConTienda.value;
-  const reservas = form.reservas.value;
+  const motorReservas = form.motorReservas.value;
+  const app = form.app.value;
 
   /* const contraseña = form.contraseña.value; */
 
@@ -33,7 +34,8 @@ form.addEventListener("submit", (event) => {
     phone,
     webConTienda,
     webSencilla,
-    reservas,
+    motorReservas,
+    app
   };
 
   // Enviar los datos al endpoint
