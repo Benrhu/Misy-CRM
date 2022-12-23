@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard de pedidos</title>
+    <!-- Enlace al archivo CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="flex items-center justify-center bg-gray-300 py-2">
+      <ul class="flex">
+        <li class="mr-4">
+          <a class="text-gray-800 hover:text-gray-700" href="/index.html"
+            >Formulario</a
+          >
+        </li>
+        <li class="mr-4">
+          <a class="text-gray-800 hover:text-gray-700" href="/dashboard.html"
+            >Dashboard</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <table class="table-auto w-full text-gray-800" id="orders-table">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Nombre</th>
+          <th class="px-4 py-2">Apellido</th>
+          <th class="px-4 py-2">Email</th>
+          <th class="px-4 py-2">Teléfono</th>
+          <th class="px-4 py-2">CIF</th>
+          <th class="px-4 py-2">Seguimiento</th>
+          <th class="px-4 py-2">Web sencilla</th>
+          <th class="px-4 py-2">Web con tienda</th>
+          <th class="px-4 py-2">Reservas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Iterar sobre los pedidos y mostrar cada uno en una fila de la tabla -->
+        <template id="template">
+          <tr class="text-center px-4 py-2">
+            <td class="px-4 py-2">{{name}}</td>
+            <td class="px-4 py-2">{{surname}}</td>
+            <td class="px-4 py-2">{{email}}</td>
+            <td class="px-4 py-2">{{cif}}</td>
+            <td class="px-4 py-2">{{phone}}</td>
+            <td class="px-4 py-2">{{followUp}}</td>
+            <td class="px-4 py-2">{{webSencilla}}</td>
+            <td class="px-4 py-2">{{webConTienda}}</td>
+            <td class="px-4 py-2">{{reservas}}</td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
